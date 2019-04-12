@@ -6,9 +6,33 @@ namespace Composer\Autoload;
 
 class ComposerStaticInite4a7b87d99c74bf5c685e9a8fad4ac14
 {
+    public static $prefixLengthsPsr4 = array (
+        'W' => 
+        array (
+            'Workabox\\API\\' => 13,
+        ),
+        'T' => 
+        array (
+            'Thrift\\' => 7,
+        ),
+    );
+
+    public static $prefixDirsPsr4 = array (
+        'Workabox\\API\\' => 
+        array (
+            0 => __DIR__ . '/../..' . '/API',
+        ),
+        'Thrift\\' => 
+        array (
+            0 => __DIR__ . '/..' . '/apache/thrift/lib/php/lib',
+        ),
+    );
+
     public static function getInitializer(ClassLoader $loader)
     {
         return \Closure::bind(function () use ($loader) {
+            $loader->prefixLengthsPsr4 = ComposerStaticInite4a7b87d99c74bf5c685e9a8fad4ac14::$prefixLengthsPsr4;
+            $loader->prefixDirsPsr4 = ComposerStaticInite4a7b87d99c74bf5c685e9a8fad4ac14::$prefixDirsPsr4;
 
         }, null, ClassLoader::class);
     }
