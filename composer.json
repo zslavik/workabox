@@ -1,0 +1,12 @@
+{
+    "name": "zslavik/workabox",
+    "description": "This is generated Workabox API files",
+    "authors": [
+        {
+            "name": "zslavik",
+            "email": "zhukoviacheslav@gmail.com"
+        }
+    ],
+    "minimum-stability": "dev",
+    "require": {}
+}
