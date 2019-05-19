@@ -14,8 +14,9 @@
         "apache/thrift": "^0.12.0"
     },
     "autoload": {
-        "psr-4": {
-            "Workabox\\API\\": "API/"
-        }
+        "files": [
+            "API/APIService.php",
+            "API/Types.php"
+        ]
     }
 }

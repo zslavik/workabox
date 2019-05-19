@@ -6,6 +6,5 @@ $vendorDir = dirname(dirname(__FILE__));
 $baseDir = dirname($vendorDir);
 
 return array(
-    'Workabox\\API\\' => array($baseDir . '/API'),
     'Thrift\\' => array($vendorDir . '/apache/thrift/lib/php/lib'),
 );
